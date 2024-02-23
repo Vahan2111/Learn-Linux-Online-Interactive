@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility Example</title>
+</head>
+<body>
+    <p id="textParagraph">This is a paragraph of text.</p>
+    <button id="toggleButton">Hide</button>
+
+    <script>
+        var textParagraph = document.getElementById('textParagraph');
+        var toggleButton = document.getElementById('toggleButton');
+
+        toggleButton.addEventListener('click', function() {
+            if (textParagraph.style.display !== 'none') {
+                textParagraph.style.display = 'none';
+                toggleButton.textContent = 'Show';
+            } else {
+                textParagraph.style.display = 'block';
+                toggleButton.textContent = 'Hide';
+            }
+        });
+    </script>
+</body>
+</html>

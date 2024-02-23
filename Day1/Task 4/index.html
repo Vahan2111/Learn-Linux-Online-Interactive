@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example in Button</title>
+</head>
+<body>
+    <button id="toggleButton">Привет</button>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var toggleButton = document.getElementById('toggleButton');
+            if (toggleButton.textContent === 'Привет') {
+                toggleButton.textContent = 'Пока';
+            } else {
+                toggleButton.textContent = 'Привет';
+            }
+        });
+    </script>
+</body>
+</html>

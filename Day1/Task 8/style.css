@@ -1,0 +1,14 @@
+.body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#displayArea {
+    margin-top: 20px;
+}
+
+#clickButton {
+    padding: 10px;
+    cursor: pointer;
+}

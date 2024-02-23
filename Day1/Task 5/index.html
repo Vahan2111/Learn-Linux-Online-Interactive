@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color Example</title>
+</head>
+<body>
+    <div id="colorButtons">
+        <button id="redButton">Red</button>
+        <button id="greenButton">Green</button>
+        <button id="blueButton">Blue</button>
+    </div>
+
+    <script>
+        var redButton = document.getElementById('redButton');
+        var greenButton = document.getElementById('greenButton');
+        var blueButton = document.getElementById('blueButton');
+
+        redButton.addEventListener('click', function() {
+            changeBackgroundColor('red');
+        });
+        greenButton.addEventListener('click', function() {
+            changeBackgroundColor('green');
+        });
+        blueButton.addEventListener('click', function() {
+            changeBackgroundColor('blue');
+        });
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

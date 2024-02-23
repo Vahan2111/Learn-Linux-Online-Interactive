@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Example</title>
+</head>
+<body>
+    <button id="toggleButton">Show/Hide</button>
+    <div id="hiddenDiv">This is a hidden div.</div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var hiddenDiv = document.getElementById('hiddenDiv');
+            if (hiddenDiv.style.display === 'none' || hiddenDiv.style.display === '') {
+                hiddenDiv.style.display = 'block';
+            } else {
+                hiddenDiv.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

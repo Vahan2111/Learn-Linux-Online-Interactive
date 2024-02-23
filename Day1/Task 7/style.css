@@ -1,0 +1,15 @@
+.body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#textParagraph {
+    display: block;
+    margin-top: 20px;
+}
+
+#toggleButton {
+    padding: 10px;
+    cursor: pointer;
+}

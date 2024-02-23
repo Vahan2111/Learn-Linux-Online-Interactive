@@ -1,0 +1,36 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: black
+}
+
+.section {
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 20px;
+}

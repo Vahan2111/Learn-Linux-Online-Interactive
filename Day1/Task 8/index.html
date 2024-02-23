@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter Example</title>
+</head>
+<body>
+    <button id="Button">Click me</button>
+    <p id="displayArea">Click count: <span id="clickCount">0</span></p>
+
+    <script>
+        var clickButton = document.getElementById('Button');
+        var displayArea = document.getElementById('displayArea');
+        var clickCountElement = document.getElementById('clickCount');
+        var clickCount = 0;
+
+        clickButton.addEventListener('click', function() {
+            clickCount++;
+            clickCountElement.textContent = clickCount;
+        });
+    </script>
+</body>
+</html>
