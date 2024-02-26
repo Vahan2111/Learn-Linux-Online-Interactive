@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form Validation</title>
+  <script>
+    function validateAll() {
+      var email = document.getElementById('email').value;
+
+      if (email === '') {
+        console.log('Пожалуйста, введите адрес электронной почты');
+        return false; 
+      }
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="return validateAll()">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <input type="submit" value="Отправить">
+  </form>
+</body>
+</html>
