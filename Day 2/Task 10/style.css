@@ -1,0 +1,21 @@
+.body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: red; 
+}

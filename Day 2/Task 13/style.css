@@ -1,0 +1,36 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.tab-container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.tabs {
+    display: flex;
+}
+
+.button {
+    flex: 1;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.tab-content {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}

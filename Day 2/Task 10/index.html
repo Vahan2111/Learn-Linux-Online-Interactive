@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Example</title>
+    <link rel="styelsheet" href="style.css">
+</head>
+<body>
+    <ul id="itemList">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+
+    <script>
+        var itemList = document.getElementById('itemList');
+        itemList.addEventListener('mouseover', function(event) {
+            if (event.target.tagName === 'LI') {
+                event.target.style.color = 'blue';
+            }
+        });
+
+        itemList.addEventListener('mouseout', function(event) {
+            if (event.target.tagName === 'LI') {
+                event.target.style.color = '';
+            }
+        });
+    </script>
+</body>
+</html>
