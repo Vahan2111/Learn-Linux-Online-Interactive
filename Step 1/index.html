@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column left">
+            <textarea id="commandInput" placeholder="user@linux:~$"></textarea>
+            <button onclick="executeCommand()">Выполнить</button>
+        </div>
+        <div class="column right" id="outputWindow"></div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
